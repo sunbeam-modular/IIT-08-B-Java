@@ -1,0 +1,55 @@
+package com.sunbeam;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Program {
+
+	public static void main(String[] args) {
+		List<String>list = new ArrayList<String>();
+		list.add("India");
+		list.add("USA");
+		list.add("Germany");
+		list.add("Iran");
+		list.add("India");
+		list.add("Finland");
+		
+		//add() , add(index) , contains() , set() , remove() 
+		for(String s : list) {
+			System.out.println(s.toString());
+		}
+		System.out.println();
+		int index = 3; 
+		list.add(index, "France");
+		for(String s : list) {
+			System.out.println(s.toString());
+		}
+		String find = "USA"; 
+		//contains() 
+		boolean found = list.contains(find);
+		
+		if(found)
+			System.out.println("Ele " + find + " found");
+		else 
+			System.out.println("Ele  not found");
+		
+		//Replaces the element at the specified position 
+		//in this list with the specified element
+		System.out.println();
+		String ele = "Nepal"; 
+		ele = ele.toUpperCase();
+		list.set(index, ele); 
+		System.out.println();
+		for(String s : list) {
+			System.out.println(s.toString());
+		}
+		
+		list.remove(index); 
+		for(String s : list) {
+			System.out.println(s.toString());
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.sunbeam;
+
+import java.util.Scanner;
+
+// handling the problems programmatically 
+public class Program {
+	public static int divide(int num , int den) {
+		
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in); 
+		System.out.print("Numerator : ");
+		int num = sc.nextInt(); 
+		System.out.print("Denominator : ");
+		int num = sc.nextInt(); 
+	}
+
+}

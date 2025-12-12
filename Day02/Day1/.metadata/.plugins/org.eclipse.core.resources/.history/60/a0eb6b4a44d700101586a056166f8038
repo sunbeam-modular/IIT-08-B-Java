@@ -1,0 +1,14 @@
+package com.sunbeam;
+
+public class InvalidTimeException {
+	private String invalidField; 
+	private int invalidValue; 
+	public InvalidTimeException() {
+		// TODO Auto-generated constructor stub
+	}
+	public InvalidTimeException(String invalidField, int invalidValue) {
+		this.invalidField = invalidField;
+		this.invalidValue = invalidValue;
+	}
+	
+}

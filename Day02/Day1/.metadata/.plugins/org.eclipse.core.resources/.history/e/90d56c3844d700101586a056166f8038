@@ -1,0 +1,12 @@
+package com.sunbeam;
+
+import java.io.FileNotFoundException;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+// handling the problems programmatically 
+public class Program {
+	
+	
+
+}
