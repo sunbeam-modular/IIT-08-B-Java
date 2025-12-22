@@ -1,0 +1,8 @@
+package com.sunbeam;
+
+import jakarta.servlet.annotation.WebServlet;
+
+@WebServlet("/first")
+public class FirstServlet {
+
+}

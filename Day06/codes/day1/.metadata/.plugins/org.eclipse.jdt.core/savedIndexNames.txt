@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\sunbeam\Desktop\codes\day1\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+4128420909.index
+1345302021.index
