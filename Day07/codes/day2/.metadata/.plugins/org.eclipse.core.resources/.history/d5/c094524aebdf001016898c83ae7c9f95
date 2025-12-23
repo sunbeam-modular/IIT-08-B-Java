@@ -1,0 +1,8 @@
+package com.sunbeam.servlets;
+
+import jakarta.servlet.annotation.WebServlet;
+
+@WebServlet("/delcand")
+public class DeleteCandidateServlet {
+
+}

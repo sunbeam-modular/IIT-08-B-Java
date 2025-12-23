@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.mysql.cj.Session"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="org.apache.tomcat.util.http.parser.Cookie"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.sunbeam.pojos.Candidate"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.sunbeam.pojos.User"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="com.sunbeam.daos.UserDao"/>
+    <fullyQualifiedTypeName name="com.sunbeam.daos.UserDaoImpl"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.Cookie"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="com.sunbeam.daos.CandidateDao"/>
+    <fullyQualifiedTypeName name="com.sunbeam.daos.CandidateDaoImpl"/>
+</qualifiedTypeNameHistroy>

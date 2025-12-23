@@ -1,0 +1,9 @@
+package com.sunbeam.servlets;
+
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+
+@WebServlet("/result")
+public class ResultServlet extends HttpServlet {
+
+}

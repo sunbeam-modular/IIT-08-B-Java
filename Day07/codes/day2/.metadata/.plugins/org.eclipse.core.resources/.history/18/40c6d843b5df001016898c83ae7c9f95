@@ -1,0 +1,9 @@
+package com.sunbeam.servlets;
+
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+
+@WebServlet("/candlist")
+public class CandidateListServlet extends HttpServlet{
+
+}

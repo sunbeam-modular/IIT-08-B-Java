@@ -1,0 +1,54 @@
+package com.sunbeam.servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet("/logout")
+public class LogoutServlet extends HttpServlet {
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		super.doGet(req, resp);
+	}
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		super.doPost(req, resp);
+	}
+	protected void processRequest(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		PrintWriter out = resp.getWriter(); 
+		resp.setContentType("text/html");
+		out.println("<html>");
+		out.println("<head>");
+		out.println("<title>Logout</title>");
+		out.println("</head>");
+		out.println("<body>");
+		out.println("<h2>Thank You!</h2>");
+		//access the cookie -- // get username from cookie and display it
+		String userName = ""; 
+		Cookie[] arr = req.getCookies(); 
+		if(arr!=null) {
+			for(Cookie c : arr) {
+				if(c.getName().equals("uname")) {
+					userName = c.getValue(); 
+				}
+			}
+		}
+		out.println("<p>" + userName + "</p>"); 
+		//Destroy the cookie 
+		Cookie c = new Cookie("uname",""); 
+		c.setMaxAge(0); 
+		resp.addCookie(c); 
+		
+		out.println("<a href='index.html'>Login Again</a>");
+		out.println("</body>");
+		out.println("</html>");
+	}
+}

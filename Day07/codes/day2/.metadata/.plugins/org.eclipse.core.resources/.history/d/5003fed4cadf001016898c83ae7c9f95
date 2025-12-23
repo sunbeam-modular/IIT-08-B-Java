@@ -1,0 +1,9 @@
+package com.sunbeam.servlets;
+
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+
+@WebServlet("/vote")
+public class VoteServlet extends HttpServlet {
+
+}

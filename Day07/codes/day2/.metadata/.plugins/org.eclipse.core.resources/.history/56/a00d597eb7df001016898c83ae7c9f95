@@ -1,0 +1,47 @@
+package com.sunbeam.servlets;
+
+import java.io.IOException;
+
+import com.mysql.cj.Session;
+import com.sunbeam.pojos.User;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
+@WebServlet("/vote")
+public class VoteServlet extends HttpServlet {
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		super.doGet(req, resp);
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		super.doPost(req, resp);
+	}
+
+	protected void processRequest(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		HttpSession session = req.getSession();
+		User user = (User) session.getAttribute("user");
+		if (user.isStatus()) {
+			out.println("<html>");
+			out.println("<head>");
+			out.println("<title>Vote</title>");
+			out.println("</head>");
+			out.println("<body>");
+			out.println("<h2>Already Voted.</h2>");
+			out.println("<a href='logout'>Sign Out</a>");
+			out.println("</body>");
+			out.println("</html>");
+			return;
+		}
+
+	}
+}
