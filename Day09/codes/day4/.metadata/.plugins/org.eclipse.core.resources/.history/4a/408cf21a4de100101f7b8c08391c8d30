@@ -1,0 +1,7 @@
+package com.sunbeam.beans;
+
+public class LoginBean {
+	private String email;
+	private String passwd;
+	private User user;
+}

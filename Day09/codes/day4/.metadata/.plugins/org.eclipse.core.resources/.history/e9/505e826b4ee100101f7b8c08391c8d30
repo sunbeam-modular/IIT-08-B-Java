@@ -1,0 +1,7 @@
+package com.sunbeam.beans;
+
+public class RegistrationBean {
+	private String fname, lname, email, passwd, birth;
+    private String role;
+    private boolean status, regStatus;
+}

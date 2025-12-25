@@ -1,0 +1,9 @@
+package com.sunbeam.beans;
+
+import com.sunbeam.pojos.User;
+
+public class LoginBean {
+	private String email;
+	private String passwd;
+	private User user;
+}

@@ -1,0 +1,7 @@
+package com.sunbeam.beans;
+
+public class VoteBean {
+	 private int candidateId;
+	    private User user;
+	    private boolean status;
+}

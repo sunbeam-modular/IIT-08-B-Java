@@ -1,0 +1,19 @@
+package com.sunbeam.beans;
+
+import java.util.List;
+
+import com.sunbeam.pojos.Candidate;
+
+public class CandidateListBean {
+	private List<Candidate> candidateList;
+	public CandidateListBean() {
+		// TODO Auto-generated constructor stub
+	}
+	public List<Candidate> getCandidateList() {
+		return candidateList;
+	}
+	public void setCandidateList(List<Candidate> candidateList) {
+		this.candidateList = candidateList;
+	}
+	
+}

@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<jsp:useBean id="vb" class = "com.sunbeam.beans.VoteBean"/>
+<jsp:setProperty name = "vb" property="candidateId" param = "candidate"/>
+<jsp:setProperty name = "vb" property="user" value = "${SessionScope.lb.user}"/>
+${vb.registerVote()}
+<c:choose>
+	<c:when test="${vb.status}">
+		<h2>Congratulations</h2>
+		<h3>Your Vote is successfully Registered</h3>
+	</c:when>
+	<c:otherwise>
+		<h2>Failed</h2>
+		<h3>Your Vote is successfully Registered</h3>
+	</c:otherwise>
+</c:choose>
+</body>
+</html>
