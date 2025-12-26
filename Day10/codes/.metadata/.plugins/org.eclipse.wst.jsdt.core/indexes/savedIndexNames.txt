@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\sunbeam\Desktop\codes\day5\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+917479173.index
+3427736709.index
+2547489112.index
+3145080691.index
+1625014009.index
+610899767.index
